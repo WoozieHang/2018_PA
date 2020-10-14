@@ -1,0 +1,24 @@
+make[1]: Entering directory '/home/woozie/pa2018_fall'
+./scripts/update 171860659
+error: object file .git/objects/6f/885d1eac0c47dbf9d4988ac1ebb23ba980556b is empty
+error: object file .git/objects/6f/885d1eac0c47dbf9d4988ac1ebb23ba980556b is empty
+fatal: loose object 6f885d1eac0c47dbf9d4988ac1ebb23ba980556b (stored in .git/objects/6f/885d1eac0c47dbf9d4988ac1ebb23ba980556b) is corrupt
+Makefile:22: recipe for target 'all' failed
+make[1]: [all] Error 128 (ignored)
+cd nemu && make
+make[2]: Entering directory '/home/woozie/pa2018_fall/nemu'
+make[2]: 'nemu' is up to date.
+make[2]: Leaving directory '/home/woozie/pa2018_fall/nemu'
+cd testcase && make
+make[2]: Entering directory '/home/woozie/pa2018_fall/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+make[2]: Leaving directory '/home/woozie/pa2018_fall/testcase'
+cd kernel && make
+make[2]: Entering directory '/home/woozie/pa2018_fall/kernel'
+make[2]: 'kernel' is up to date.
+make[2]: Leaving directory '/home/woozie/pa2018_fall/kernel'
+cd game && make
+make[2]: Entering directory '/home/woozie/pa2018_fall/game'
+make[2]: 'game' is up to date.
+make[2]: Leaving directory '/home/woozie/pa2018_fall/game'
+make[1]: Leaving directory '/home/woozie/pa2018_fall'
